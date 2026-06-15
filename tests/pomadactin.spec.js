@@ -7,7 +7,6 @@ test('pom',async({page})=>{
     await login.EnterUsername('ajithak123')
     await login.EnterPassword('Welcome@123')
     await login.ClickButton()
-
     const searchHotel = new SearchHotel(page)
     await searchHotel.VisitUrl()
     await searchHotel.SelectLocation()
@@ -19,5 +18,3 @@ test('pom',async({page})=>{
     await searchHotel.ClickSearchButton()
     await page.waitForTimeout(3000)
    })
-   
-   
