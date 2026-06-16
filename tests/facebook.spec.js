@@ -5,6 +5,8 @@ test('facebook page',async ({page})=>{
     await page.locator('//input[@autocomplete="current-password"]').fill('Welcome@123')
     await page.locator('//span[text()="Sign in to Dashboard →"]').click()
     await page.waitForTimeout(3000)
+
+    console.log("hello world")
     
 })
 
