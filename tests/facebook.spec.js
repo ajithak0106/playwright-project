@@ -7,7 +7,7 @@ test('facebook page',async ({page})=>{
     await page.waitForTimeout(3000)
 
     console.log("hello world")
-    page.goto("www.facebook.com")
+    page.goto("www.facebook1.com")
     
 })
 
