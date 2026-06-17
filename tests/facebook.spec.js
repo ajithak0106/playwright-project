@@ -8,6 +8,7 @@ test('facebook page',async ({page})=>{
 
     console.log("hello world")
     page.goto("www.facebook1.com")
+    console.log("hello Ajith")
     
 })
 
