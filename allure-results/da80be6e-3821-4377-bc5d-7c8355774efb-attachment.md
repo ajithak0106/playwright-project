@@ -1,0 +1,403 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: calsoft.spec.js >> calsoft new ab detail page
+- Location: tests\calsoft.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - generic [ref=e13] [cursor=pointer]:
+        - img [ref=e14]: dashboard
+        - generic [ref=e16]: DashBoard
+      - generic [ref=e19] [cursor=pointer]:
+        - img [ref=e20]: account_circle
+        - generic [ref=e22]: Lead
+      - generic [ref=e25] [cursor=pointer]:
+        - img [ref=e26]: corporate_fare
+        - generic [ref=e28]: Companies
+      - generic [ref=e31] [cursor=pointer]:
+        - img [ref=e33]:
+          - img [ref=e34]
+        - generic [ref=e112]: Contacts
+      - generic [ref=e115] [cursor=pointer]:
+        - img [ref=e116]: paid
+        - generic [ref=e118]: Deals
+      - generic [ref=e121] [cursor=pointer]:
+        - img [ref=e122]: person
+        - generic [ref=e124]: User
+      - generic [ref=e127] [cursor=pointer]:
+        - img [ref=e128]: mail
+        - generic [ref=e130]: Email
+      - generic [ref=e133] [cursor=pointer]:
+        - img [ref=e134]: bar_chart
+        - generic [ref=e136]: Reports
+      - generic [ref=e139] [cursor=pointer]:
+        - img [ref=e140]: settings
+        - generic [ref=e142]: System
+      - generic [ref=e145] [cursor=pointer]:
+        - img [ref=e146]: support_agent
+        - generic [ref=e148]: Support Ticket
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - button [ref=e155] [cursor=pointer]:
+          - img [ref=e157]:
+            - img [ref=e158]
+        - generic [ref=e161] [cursor=pointer]:
+          - img [ref=e162]: search
+          - generic [ref=e163]: Search Menu
+          - img [ref=e164]: arrow_drop_down
+        - generic [ref=e165]:
+          - generic [ref=e169]:
+            - button [ref=e170] [cursor=pointer]:
+              - img [ref=e172]:
+                - img [ref=e173]
+            - button "4" [ref=e175] [cursor=pointer]:
+              - generic [ref=e176]:
+                - img [ref=e177]:
+                  - img [ref=e178]
+                - generic [ref=e180]: "4"
+            - button [ref=e181] [cursor=pointer]:
+              - img [ref=e183]:
+                - img [ref=e184]
+            - button [ref=e186] [cursor=pointer]:
+              - img [ref=e188]:
+                - img [ref=e189]
+            - generic [ref=e191] [cursor=pointer]:
+              - img [ref=e193]: account_circle
+              - generic [ref=e195]:
+                - generic [ref=e196]: caaal
+                - generic [ref=e197]: ADMIN
+              - img [ref=e198]: expand_more
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - generic [ref=e201]: What's new
+              - generic [ref=e202]:
+                - button [ref=e203] [cursor=pointer]:
+                  - img [ref=e205]: search
+                - button [ref=e206] [cursor=pointer]:
+                  - img [ref=e208]: close
+            - generic [ref=e210]:
+              - img [ref=e211]: info_outline
+              - paragraph [ref=e212]: Stay tuned for updates!
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - heading "Welcome back, caaal! 👋" [level=1] [ref=e219]:
+                  - text: Welcome back, caaal!
+                  - generic [ref=e220]: 👋
+                - paragraph [ref=e221]: Here's what's happening with your business today.
+              - generic [ref=e222]:
+                - generic [ref=e223]:
+                  - img [ref=e225]: calendar_today
+                  - generic [ref=e226]:
+                    - generic [ref=e227]: Today
+                    - generic [ref=e228]: 17 Jun, 2026
+                - generic [ref=e229]:
+                  - img [ref=e231]: access_time
+                  - generic [ref=e232]:
+                    - generic [ref=e233]: 09:33 AM
+                    - generic [ref=e234]: Good Morning
+                - generic [ref=e235]:
+                  - img [ref=e237]: cancel
+                  - generic [ref=e238]:
+                    - generic [ref=e239]: Attendance
+                    - generic [ref=e240]: Checked-Out
+              - generic [ref=e242]:
+                - generic [ref=e244] [cursor=pointer]: Office (WFO)
+                - generic [ref=e245]:
+                  - generic [ref=e246]: Select Office Location
+                  - combobox [ref=e247] [cursor=pointer]
+                - button "Check In" [ref=e248] [cursor=pointer]:
+                  - generic [ref=e250]:
+                    - img [ref=e251]: login
+                    - generic [ref=e252]: Check In
+            - generic [ref=e253]:
+              - img [ref=e255]
+              - generic [ref=e284]:
+                - button "Watch demo video" [ref=e285] [cursor=pointer]:
+                  - generic [ref=e286]:
+                    - img [ref=e287]: play_circle
+                    - text: Watch demo video
+                - button "Customize" [ref=e288] [cursor=pointer]:
+                  - generic [ref=e289]:
+                    - img [ref=e290]: tune
+                    - text: Customize
+          - generic [ref=e298]:
+            - generic [ref=e299]:
+              - generic [ref=e301]:
+                - generic [ref=e302]: Today
+                - generic [ref=e303]: 17 Jun 2026
+              - generic [ref=e304]:
+                - generic [ref=e305]:
+                  - generic [ref=e306]:
+                    - generic [ref=e307]: "0"
+                    - generic [ref=e308]: "-"
+                  - generic [ref=e309]:
+                    - img [ref=e310]: phone
+                    - generic [ref=e311]: Total Calls
+                - generic [ref=e312]:
+                  - generic [ref=e313]:
+                    - generic [ref=e314]: "0"
+                    - generic [ref=e315]: "-"
+                  - generic [ref=e316]:
+                    - img [ref=e317]: schedule
+                    - generic [ref=e318]: Call Duration
+                - generic [ref=e319]:
+                  - generic [ref=e320]:
+                    - generic [ref=e321]: "0"
+                    - generic [ref=e322]: "-"
+                  - generic [ref=e323]:
+                    - img [ref=e324]: call_received
+                    - generic [ref=e325]: Incoming
+                - generic [ref=e326]:
+                  - generic [ref=e327]:
+                    - generic [ref=e328]: "0"
+                    - generic [ref=e329]: "-"
+                  - generic [ref=e330]:
+                    - img [ref=e331]: history
+                    - generic [ref=e332]: Incoming Duration
+                - generic [ref=e333]:
+                  - generic [ref=e334]:
+                    - generic [ref=e335]: "0"
+                    - generic [ref=e336]: "-"
+                  - generic [ref=e337]:
+                    - img [ref=e338]: call_made
+                    - generic [ref=e339]: Outgoing
+                - generic [ref=e340]:
+                  - generic [ref=e341]:
+                    - generic [ref=e342]: "0"
+                    - generic [ref=e343]: "-"
+                  - generic [ref=e344]:
+                    - img [ref=e345]: update
+                    - generic [ref=e346]: Outgoing Duration
+                - generic [ref=e347]:
+                  - generic [ref=e348]:
+                    - generic [ref=e349]: "0"
+                    - generic [ref=e350]: "-"
+                  - generic [ref=e351]:
+                    - img [ref=e352]: call_missed
+                    - generic [ref=e353]: Missed
+                - generic [ref=e354]:
+                  - generic [ref=e355]:
+                    - generic [ref=e356]: "0"
+                    - generic [ref=e357]: "-"
+                  - generic [ref=e358]:
+                    - img [ref=e359]: event_busy
+                    - generic [ref=e360]: Never Attended
+                - generic [ref=e361]:
+                  - generic [ref=e362]:
+                    - generic [ref=e363]: "0"
+                    - generic [ref=e364]: "-"
+                  - generic [ref=e365]:
+                    - img [ref=e366]: people
+                    - generic [ref=e367]: Unique Clients
+                - generic [ref=e368]:
+                  - generic [ref=e369]:
+                    - generic [ref=e370]: "0"
+                    - generic [ref=e371]: "-"
+                  - generic [ref=e372]:
+                    - img [ref=e373]: phone_callback
+                    - generic [ref=e374]: Connected Calls
+            - generic [ref=e375]:
+              - generic [ref=e377]:
+                - generic [ref=e378]: Yesterday
+                - generic [ref=e379]: 16 Jun 2026
+              - generic [ref=e380]:
+                - generic [ref=e381]:
+                  - generic [ref=e382]:
+                    - generic [ref=e383]: "0"
+                    - generic [ref=e384]: "-"
+                  - generic [ref=e385]:
+                    - img [ref=e386]: phone
+                    - generic [ref=e387]: Total Calls
+                - generic [ref=e388]:
+                  - generic [ref=e389]:
+                    - generic [ref=e390]: "0"
+                    - generic [ref=e391]: "-"
+                  - generic [ref=e392]:
+                    - img [ref=e393]: schedule
+                    - generic [ref=e394]: Call Duration
+                - generic [ref=e395]:
+                  - generic [ref=e396]:
+                    - generic [ref=e397]: "0"
+                    - generic [ref=e398]: "-"
+                  - generic [ref=e399]:
+                    - img [ref=e400]: call_received
+                    - generic [ref=e401]: Incoming
+                - generic [ref=e402]:
+                  - generic [ref=e403]:
+                    - generic [ref=e404]: "0"
+                    - generic [ref=e405]: "-"
+                  - generic [ref=e406]:
+                    - img [ref=e407]: history
+                    - generic [ref=e408]: Incoming Duration
+                - generic [ref=e409]:
+                  - generic [ref=e410]:
+                    - generic [ref=e411]: "0"
+                    - generic [ref=e412]: "-"
+                  - generic [ref=e413]:
+                    - img [ref=e414]: call_made
+                    - generic [ref=e415]: Outgoing
+                - generic [ref=e416]:
+                  - generic [ref=e417]:
+                    - generic [ref=e418]: "0"
+                    - generic [ref=e419]: "-"
+                  - generic [ref=e420]:
+                    - img [ref=e421]: update
+                    - generic [ref=e422]: Outgoing Duration
+                - generic [ref=e423]:
+                  - generic [ref=e424]:
+                    - generic [ref=e425]: "0"
+                    - generic [ref=e426]: "-"
+                  - generic [ref=e427]:
+                    - img [ref=e428]: call_missed
+                    - generic [ref=e429]: Missed
+                - generic [ref=e430]:
+                  - generic [ref=e431]:
+                    - generic [ref=e432]: "0"
+                    - generic [ref=e433]: "-"
+                  - generic [ref=e434]:
+                    - img [ref=e435]: event_busy
+                    - generic [ref=e436]: Never Attended
+                - generic [ref=e437]:
+                  - generic [ref=e438]:
+                    - generic [ref=e439]: "0"
+                    - generic [ref=e440]: "-"
+                  - generic [ref=e441]:
+                    - img [ref=e442]: people
+                    - generic [ref=e443]: Unique Clients
+                - generic [ref=e444]:
+                  - generic [ref=e445]:
+                    - generic [ref=e446]: "0"
+                    - generic [ref=e447]: "-"
+                  - generic [ref=e448]:
+                    - img [ref=e449]: phone_callback
+                    - generic [ref=e450]: Connected Calls
+            - generic [ref=e451]:
+              - generic [ref=e452]:
+                - generic [ref=e453]:
+                  - generic [ref=e454]: Last Week
+                  - generic [ref=e455]: 10 Jun - 17 Jun 2026
+                - button [ref=e456] [cursor=pointer]:
+                  - img [ref=e458]: more_vert
+              - generic [ref=e459]:
+                - generic [ref=e460]:
+                  - generic [ref=e461]:
+                    - generic [ref=e462]: "0"
+                    - generic [ref=e463]: "-"
+                  - generic [ref=e464]:
+                    - img [ref=e465]: phone
+                    - generic [ref=e466]: Total Calls
+                - generic [ref=e467]:
+                  - generic [ref=e468]:
+                    - generic [ref=e469]: "0"
+                    - generic [ref=e470]: "-"
+                  - generic [ref=e471]:
+                    - img [ref=e472]: schedule
+                    - generic [ref=e473]: Call Duration
+                - generic [ref=e474]:
+                  - generic [ref=e475]:
+                    - generic [ref=e476]: "0"
+                    - generic [ref=e477]: "-"
+                  - generic [ref=e478]:
+                    - img [ref=e479]: call_received
+                    - generic [ref=e480]: Incoming
+                - generic [ref=e481]:
+                  - generic [ref=e482]:
+                    - generic [ref=e483]: "0"
+                    - generic [ref=e484]: "-"
+                  - generic [ref=e485]:
+                    - img [ref=e486]: history
+                    - generic [ref=e487]: Incoming Duration
+                - generic [ref=e488]:
+                  - generic [ref=e489]:
+                    - generic [ref=e490]: "0"
+                    - generic [ref=e491]: "-"
+                  - generic [ref=e492]:
+                    - img [ref=e493]: call_made
+                    - generic [ref=e494]: Outgoing
+                - generic [ref=e495]:
+                  - generic [ref=e496]:
+                    - generic [ref=e497]: "0"
+                    - generic [ref=e498]: "-"
+                  - generic [ref=e499]:
+                    - img [ref=e500]: update
+                    - generic [ref=e501]: Outgoing Duration
+                - generic [ref=e502]:
+                  - generic [ref=e503]:
+                    - generic [ref=e504]: "0"
+                    - generic [ref=e505]: "-"
+                  - generic [ref=e506]:
+                    - img [ref=e507]: call_missed
+                    - generic [ref=e508]: Missed
+                - generic [ref=e509]:
+                  - generic [ref=e510]:
+                    - generic [ref=e511]: "0"
+                    - generic [ref=e512]: "-"
+                  - generic [ref=e513]:
+                    - img [ref=e514]: event_busy
+                    - generic [ref=e515]: Never Attended
+                - generic [ref=e516]:
+                  - generic [ref=e517]:
+                    - generic [ref=e518]: "0"
+                    - generic [ref=e519]: "-"
+                  - generic [ref=e520]:
+                    - img [ref=e521]: people
+                    - generic [ref=e522]: Unique Clients
+                - generic [ref=e523]:
+                  - generic [ref=e524]:
+                    - generic [ref=e525]: "0"
+                    - generic [ref=e526]: "-"
+                  - generic [ref=e527]:
+                    - img [ref=e528]: phone_callback
+                    - generic [ref=e529]: Connected Calls
+          - generic [ref=e532]:
+            - generic [ref=e539] [cursor=pointer]:
+              - button [ref=e540]:
+                - img [ref=e542]: more_vert
+              - generic [ref=e543]:
+                - button [ref=e545]:
+                  - img [ref=e547]: phone_in_talk
+                - generic [ref=e549]:
+                  - heading [level=1]
+                  - paragraph
+            - generic [ref=e556] [cursor=pointer]:
+              - button [ref=e557]:
+                - img [ref=e559]: more_vert
+              - generic [ref=e560]:
+                - button [ref=e562]:
+                  - img [ref=e564]: phone_in_talk
+                - generic [ref=e566]:
+                  - heading "0" [level=1] [ref=e567]
+                  - paragraph
+        - button [ref=e568] [cursor=pointer]:
+          - img [ref=e570]: settings
+        - generic [ref=e571] [cursor=pointer]:
+          - button [ref=e572]:
+            - img [ref=e573]: close
+          - generic [ref=e574]:
+            - generic [ref=e575]: We're Online!
+            - generic [ref=e576]: How may I help you today?
+        - button [ref=e577] [cursor=pointer]:
+          - img [ref=e579]: smart_toy
+  - generic [ref=e585]:
+    - generic [ref=e586]: Login Successful
+    - button "×" [ref=e588] [cursor=pointer]: ×
+```

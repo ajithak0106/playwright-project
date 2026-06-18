@@ -9,24 +9,24 @@
 
 
 
-import{test} from'@playwright/test'
-test('window handling', async({browser})=>{
-   const context = await browser.newContext()
-   const page = await context.newPage()
-   await page.goto('https://www.amazon.in/')
-   await page.locator('//input[@id="twotabsearchtextbox"]').fill('samsung s24 ultra')
-   await page.keyboard.press('Enter')
-   //await page.waitForTimeout(3000)
+// import{test} from'@playwright/test'
+// test('window handling', async({browser})=>{
+//    const context = await browser.newContext()
+//    const page = await context.newPage()
+//    await page.goto('https://www.amazon.in/')
+//    await page.locator('//input[@id="twotabsearchtextbox"]').fill('samsung s24 ultra')
+//    await page.keyboard.press('Enter')
+//    //await page.waitForTimeout(3000)
 
-   //h2[contains(@aria-label,"Galaxy S25 Ultra 5G AI Smartphone (Titanium Black, 12GB RAM, 512GB Storage)")]
+//    //h2[contains(@aria-label,"Galaxy S25 Ultra 5G AI Smartphone (Titanium Black, 12GB RAM, 512GB Storage)")]
    
-   const [newPage]=await Promise.all([context.waitForEvent('page'),
-   page.click('//h2[contains(@aria-label,"Galaxy S25 Ultra 5G AI Smartphone (Titanium Black, 12GB RAM, 512GB Storage)")]')
-   ])
-   await newPage.waitForLoadState()
-   const title =await newPage.title()
-   console.log(title)
-})
+//    const [newPage]=await Promise.all([context.waitForEvent('page'),
+//    page.click('//h2[contains(@aria-label,"Galaxy S25 Ultra 5G AI Smartphone (Titanium Black, 12GB RAM, 512GB Storage)")]')
+//    ])
+//    await newPage.waitForLoadState()
+//    const title =await newPage.title()
+//    console.log(title)
+// })
 
 
 
