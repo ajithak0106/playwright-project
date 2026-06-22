@@ -2,7 +2,7 @@
 import {test} from '@playwright/test';
 
 test('flowzo page', async ({ page }) => {
-  await page.goto("https://www.flowzo.ai/");
+  await page.goto("https://www.dev.flowzo.ai/");
   });
 
 
